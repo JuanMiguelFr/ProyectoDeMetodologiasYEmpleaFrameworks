@@ -29,5 +29,47 @@ namespace proyecto
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		int intentos = 4;
+		void BtnLoginClick(object sender, EventArgs e)
+		{
+			string usuario = txtUsuario.Text;
+			string contraseña = txtContraseña.Text;
+			string usuarioCorrecto = "root";
+			string contraseñaCorrecta = "root";
+			if ( usuario == usuarioCorrecto && contraseña == contraseñaCorrecta)
+			{
+				MessageBox.Show ("Acceso Consedido ;)");
+				Form1 form1 =new Form1();
+				form1.Show();
+				this.Hide();;;
+			}
+			else
+			{
+				intentos--;
+				if (usuario != usuarioCorrecto && contraseña != contraseñaCorrecta)
+				{
+					MessageBox.Show("Usuario y contraseña incorrectos. Te quedan"+intentos);
+                }
+				else if (usuario != usuarioCorrecto)
+				{
+					MessageBox.Show("Usuario incorrecto. Te quedan"+intentos);
+                }
+				else if (contraseña != contraseñaCorrecta)
+				{
+					MessageBox.Show("Contraseña incorrecta. Te quedan"+intentos);
+				}
+				if (intentos == 0)
+				{
+					 MessageBox.Show("Cuenta bloqueada. Demasiados intentos fallidos.");
+                     btnLogin.Enabled = false;
+                      this.Close();
+				}       
+			}
+		}
+		
+		void BtnCloseClick(object sender, EventArgs e)
+		{
+			Close();
+		}
 	}
 }
