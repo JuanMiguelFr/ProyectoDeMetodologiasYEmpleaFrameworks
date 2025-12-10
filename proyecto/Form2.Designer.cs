@@ -86,6 +86,7 @@ namespace proyecto
 			this.cbbSalado.Name = "cbbSalado";
 			this.cbbSalado.Size = new System.Drawing.Size(126, 21);
 			this.cbbSalado.TabIndex = 58;
+			this.cbbSalado.SelectedIndexChanged += new System.EventHandler(this.CbbSaladoSelectedIndexChanged);
 			// 
 			// pictureBox1
 			// 
@@ -269,6 +270,7 @@ namespace proyecto
 			this.btnEliminar.TabIndex = 42;
 			this.btnEliminar.Text = "ELIMINAR PRODUCTO";
 			this.btnEliminar.UseVisualStyleBackColor = true;
+			this.btnEliminar.Click += new System.EventHandler(this.BtnEliminarClick);
 			// 
 			// btnAgregar
 			// 
@@ -280,6 +282,7 @@ namespace proyecto
 			this.btnAgregar.TabIndex = 41;
 			this.btnAgregar.Text = "AGREGAR PRODUCTO";
 			this.btnAgregar.UseVisualStyleBackColor = true;
+			this.btnAgregar.Click += new System.EventHandler(this.BtnAgregarClick);
 			// 
 			// txtTotal
 			// 
@@ -359,6 +362,7 @@ namespace proyecto
 			this.cbbDulce.Name = "cbbDulce";
 			this.cbbDulce.Size = new System.Drawing.Size(126, 21);
 			this.cbbDulce.TabIndex = 33;
+			this.cbbDulce.SelectedIndexChanged += new System.EventHandler(this.CbbDulceSelectedIndexChanged);
 			// 
 			// rbtSalado
 			// 
@@ -371,6 +375,7 @@ namespace proyecto
 			this.rbtSalado.TabStop = true;
 			this.rbtSalado.Text = "Salado";
 			this.rbtSalado.UseVisualStyleBackColor = true;
+			this.rbtSalado.CheckedChanged += new System.EventHandler(this.RbtSaladoCheckedChanged);
 			// 
 			// rbtDulce
 			// 
@@ -383,6 +388,7 @@ namespace proyecto
 			this.rbtDulce.TabStop = true;
 			this.rbtDulce.Text = "Dulce";
 			this.rbtDulce.UseVisualStyleBackColor = true;
+			this.rbtDulce.CheckedChanged += new System.EventHandler(this.RbtDulceCheckedChanged);
 			// 
 			// Form2
 			// 

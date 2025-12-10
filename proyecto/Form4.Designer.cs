@@ -172,26 +172,29 @@ namespace proyecto
 			this.btnSalir.TabIndex = 20;
 			this.btnSalir.Text = "Salir";
 			this.btnSalir.UseVisualStyleBackColor = true;
+			this.btnSalir.Click += new System.EventHandler(this.BtnSalirClick);
 			// 
 			// btnCancelar
 			// 
-			this.btnCancelar.Location = new System.Drawing.Point(303, 202);
+			this.btnCancelar.Location = new System.Drawing.Point(292, 202);
 			this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
 			this.btnCancelar.Name = "btnCancelar";
-			this.btnCancelar.Size = new System.Drawing.Size(75, 29);
+			this.btnCancelar.Size = new System.Drawing.Size(86, 29);
 			this.btnCancelar.TabIndex = 19;
 			this.btnCancelar.Text = "Cancelar";
 			this.btnCancelar.UseVisualStyleBackColor = true;
+			this.btnCancelar.Click += new System.EventHandler(this.BtnCancelarClick);
 			// 
 			// btnRegistrar
 			// 
-			this.btnRegistrar.Location = new System.Drawing.Point(211, 202);
+			this.btnRegistrar.Location = new System.Drawing.Point(200, 202);
 			this.btnRegistrar.Margin = new System.Windows.Forms.Padding(2);
 			this.btnRegistrar.Name = "btnRegistrar";
 			this.btnRegistrar.Size = new System.Drawing.Size(88, 29);
 			this.btnRegistrar.TabIndex = 18;
 			this.btnRegistrar.Text = "Registrar";
 			this.btnRegistrar.UseVisualStyleBackColor = true;
+			this.btnRegistrar.Click += new System.EventHandler(this.BtnRegistrarClick);
 			// 
 			// lblFecha
 			// 
@@ -206,7 +209,7 @@ namespace proyecto
 			this.label8.Location = new System.Drawing.Point(224, 144);
 			this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(97, 19);
+			this.label8.Size = new System.Drawing.Size(109, 19);
 			this.label8.TabIndex = 14;
 			this.label8.Text = "Fecha Actual:";
 			// 
@@ -281,10 +284,10 @@ namespace proyecto
 			// 
 			// label5
 			// 
-			this.label5.Location = new System.Drawing.Point(39, 110);
+			this.label5.Location = new System.Drawing.Point(33, 110);
 			this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(52, 21);
+			this.label5.Size = new System.Drawing.Size(58, 21);
 			this.label5.TabIndex = 8;
 			this.label5.Text = "Grado:";
 			// 
@@ -352,7 +355,7 @@ namespace proyecto
 			this.label1.Location = new System.Drawing.Point(14, 35);
 			this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(145, 19);
+			this.label1.Size = new System.Drawing.Size(156, 19);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Nombre del alumno";
 			// 
