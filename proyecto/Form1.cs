@@ -39,10 +39,12 @@ namespace proyecto
 		    this.pnVolumen.Visible=false;
 		    this.f3.Visible=false;
 		    this.f2.Visible=false;
+		    this.IsMdiContainer = true;
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
 		void EmpleadoToolStripMenuItemClick(object sender, EventArgs e)
 		{
           f3.MdiParent = this;

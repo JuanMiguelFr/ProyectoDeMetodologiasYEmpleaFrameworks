@@ -67,9 +67,5 @@ namespace proyecto
 			}
 		}
 		
-		void BtnCloseClick(object sender, EventArgs e)
-		{
-			Close();
-		}
 	}
 }

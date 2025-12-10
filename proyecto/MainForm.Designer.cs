@@ -37,7 +37,6 @@ namespace proyecto
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-			this.btnClose = new System.Windows.Forms.Button();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.btnLogin = new System.Windows.Forms.Button();
 			this.txtContraseña = new System.Windows.Forms.TextBox();
@@ -46,17 +45,6 @@ namespace proyecto
 			this.lblUsuario = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
-			// 
-			// btnClose
-			// 
-			this.btnClose.Location = new System.Drawing.Point(136, 84);
-			this.btnClose.Margin = new System.Windows.Forms.Padding(2);
-			this.btnClose.Name = "btnClose";
-			this.btnClose.Size = new System.Drawing.Size(109, 73);
-			this.btnClose.TabIndex = 23;
-			this.btnClose.Text = "Cerrar";
-			this.btnClose.UseVisualStyleBackColor = true;
-			this.btnClose.Click += new System.EventHandler(this.BtnCloseClick);
 			// 
 			// pictureBox1
 			// 
@@ -71,7 +59,7 @@ namespace proyecto
 			// 
 			// btnLogin
 			// 
-			this.btnLogin.Location = new System.Drawing.Point(13, 84);
+			this.btnLogin.Location = new System.Drawing.Point(104, 84);
 			this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
 			this.btnLogin.Name = "btnLogin";
 			this.btnLogin.Size = new System.Drawing.Size(109, 73);
@@ -119,8 +107,7 @@ namespace proyecto
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(368, 312);
-			this.Controls.Add(this.btnClose);
+			this.ClientSize = new System.Drawing.Size(368, 182);
 			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.btnLogin);
 			this.Controls.Add(this.txtContraseña);
@@ -139,6 +126,5 @@ namespace proyecto
 		private System.Windows.Forms.TextBox txtContraseña;
 		private System.Windows.Forms.Button btnLogin;
 		private System.Windows.Forms.PictureBox pictureBox1;
-		private System.Windows.Forms.Button btnClose;
 	}
 }
