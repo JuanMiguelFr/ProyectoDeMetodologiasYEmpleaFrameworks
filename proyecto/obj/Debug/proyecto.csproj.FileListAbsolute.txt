@@ -8,3 +8,13 @@ C:\Users\Gabriel\CLON\ProyectoDeMetodologiasYEmpleaFrameworks\proyecto\obj\Debug
 C:\Users\Gabriel\CLON\ProyectoDeMetodologiasYEmpleaFrameworks\proyecto\obj\Debug\proyecto.Form1.resources
 C:\Users\Gabriel\CLON\ProyectoDeMetodologiasYEmpleaFrameworks\proyecto\obj\Debug\proyecto.Form2.resources
 C:\Users\Gabriel\CLON\ProyectoDeMetodologiasYEmpleaFrameworks\proyecto\obj\Debug\proyecto.Form4.resources
+C:\Users\asus\repo\ProyectoDeMetodologiasYEmpleaFrameworks\proyecto\obj\Debug\proyecto.csprojResolveAssemblyReference.cache
+C:\Users\asus\repo\ProyectoDeMetodologiasYEmpleaFrameworks\proyecto\obj\Debug\proyecto.Form1.resources
+C:\Users\asus\repo\ProyectoDeMetodologiasYEmpleaFrameworks\proyecto\obj\Debug\proyecto.Form4.resources
+C:\Users\asus\repo\ProyectoDeMetodologiasYEmpleaFrameworks\proyecto\obj\Debug\proyecto.MainForm.resources
+C:\Users\asus\repo\ProyectoDeMetodologiasYEmpleaFrameworks\proyecto\obj\Debug\proyecto.csproj.GenerateResource.Cache
+C:\Users\asus\repo\ProyectoDeMetodologiasYEmpleaFrameworks\proyecto\obj\Debug\proyecto.Form2.resources
+C:\Users\asus\repo\ProyectoDeMetodologiasYEmpleaFrameworks\proyecto\bin\Debug\proyecto.exe
+C:\Users\asus\repo\ProyectoDeMetodologiasYEmpleaFrameworks\proyecto\bin\Debug\proyecto.pdb
+C:\Users\asus\repo\ProyectoDeMetodologiasYEmpleaFrameworks\proyecto\obj\Debug\proyecto.exe
+C:\Users\asus\repo\ProyectoDeMetodologiasYEmpleaFrameworks\proyecto\obj\Debug\proyecto.pdb
