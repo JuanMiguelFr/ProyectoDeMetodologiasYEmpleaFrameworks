@@ -31,6 +31,22 @@
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CHANGES">
+      <HintPath>..\..\..\..\..\Program Files %28x86%29\MySQL\MySQL Connector NET 8.4\CHANGES</HintPath>
+    </Reference>
+    <Reference Include="CHANGES">
+      <HintPath>..\..\..\..\..\Program Files %28x86%29\MySQL\MySQL Connector NET 8.4\CHANGES</HintPath>
+    </Reference>
+    <Reference Include="CHANGES">
+      <HintPath>..\..\..\..\..\Program Files %28x86%29\MySQL\MySQL Connector NET 8.4\CHANGES</HintPath>
+    </Reference>
+    <Reference Include="CHANGES">
+      <HintPath>..\..\..\..\..\Program Files %28x86%29\MySQL\MySQL Connector NET 8.4\CHANGES</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data" />
+    <Reference Include="Release Notes">
+      <HintPath>..\..\..\..\..\Program Files %28x86%29\MySQL\MySQL Connector NET 8.4\Release Notes.txt</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
