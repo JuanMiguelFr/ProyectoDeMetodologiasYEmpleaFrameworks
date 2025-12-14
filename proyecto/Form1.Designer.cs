@@ -36,7 +36,23 @@ namespace proyecto
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.pnVolumen = new System.Windows.Forms.Panel();
+			this.lblAlturaPiramide = new System.Windows.Forms.Label();
+			this.lblAreaBase = new System.Windows.Forms.Label();
+			this.txtAlturaPiramide = new System.Windows.Forms.TextBox();
+			this.txtAreaPiramide = new System.Windows.Forms.TextBox();
+			this.txtCubo = new System.Windows.Forms.TextBox();
+			this.lblPiramide = new System.Windows.Forms.Label();
+			this.lblCubo = new System.Windows.Forms.Label();
+			this.lblEsfera = new System.Windows.Forms.Label();
+			this.txtResultadoVolumen = new System.Windows.Forms.TextBox();
+			this.lblResult = new System.Windows.Forms.Label();
+			this.txtEsfera = new System.Windows.Forms.TextBox();
+			this.btnCalcularVolumen = new System.Windows.Forms.Button();
+			this.ptbEsfera = new System.Windows.Forms.PictureBox();
+			this.ptbCubo = new System.Windows.Forms.PictureBox();
+			this.ptbPiramide = new System.Windows.Forms.PictureBox();
 			this.pnAplicacion = new System.Windows.Forms.Panel();
 			this.txtAplicacionR = new System.Windows.Forms.TextBox();
 			this.btnAplicacion = new System.Windows.Forms.Button();
@@ -89,9 +105,14 @@ namespace proyecto
 			this.perimetroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.circunferenciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.trapecioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.volumenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.PiramideToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.esferaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.cuboToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.piramideToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+			this.pnVolumen.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.ptbEsfera)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.ptbCubo)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.ptbPiramide)).BeginInit();
 			this.pnAplicacion.SuspendLayout();
 			this.pnPerimetro.SuspendLayout();
 			this.pnArea.SuspendLayout();
@@ -102,11 +123,161 @@ namespace proyecto
 			// 
 			// pnVolumen
 			// 
+			this.pnVolumen.Controls.Add(this.lblAlturaPiramide);
+			this.pnVolumen.Controls.Add(this.lblAreaBase);
+			this.pnVolumen.Controls.Add(this.txtAlturaPiramide);
+			this.pnVolumen.Controls.Add(this.txtAreaPiramide);
+			this.pnVolumen.Controls.Add(this.txtCubo);
+			this.pnVolumen.Controls.Add(this.lblPiramide);
+			this.pnVolumen.Controls.Add(this.lblCubo);
+			this.pnVolumen.Controls.Add(this.lblEsfera);
+			this.pnVolumen.Controls.Add(this.txtResultadoVolumen);
+			this.pnVolumen.Controls.Add(this.lblResult);
+			this.pnVolumen.Controls.Add(this.txtEsfera);
+			this.pnVolumen.Controls.Add(this.btnCalcularVolumen);
+			this.pnVolumen.Controls.Add(this.ptbEsfera);
+			this.pnVolumen.Controls.Add(this.ptbCubo);
+			this.pnVolumen.Controls.Add(this.ptbPiramide);
 			this.pnVolumen.Location = new System.Drawing.Point(594, 46);
 			this.pnVolumen.Margin = new System.Windows.Forms.Padding(2);
 			this.pnVolumen.Name = "pnVolumen";
-			this.pnVolumen.Size = new System.Drawing.Size(160, 199);
+			this.pnVolumen.Size = new System.Drawing.Size(379, 199);
 			this.pnVolumen.TabIndex = 22;
+			// 
+			// lblAlturaPiramide
+			// 
+			this.lblAlturaPiramide.Location = new System.Drawing.Point(175, 128);
+			this.lblAlturaPiramide.Name = "lblAlturaPiramide";
+			this.lblAlturaPiramide.Size = new System.Drawing.Size(39, 23);
+			this.lblAlturaPiramide.TabIndex = 14;
+			this.lblAlturaPiramide.Text = "Altura";
+			this.lblAlturaPiramide.Visible = false;
+			// 
+			// lblAreaBase
+			// 
+			this.lblAreaBase.Location = new System.Drawing.Point(175, 79);
+			this.lblAreaBase.Name = "lblAreaBase";
+			this.lblAreaBase.Size = new System.Drawing.Size(90, 17);
+			this.lblAreaBase.TabIndex = 13;
+			this.lblAreaBase.Text = "Area de su base";
+			this.lblAreaBase.Visible = false;
+			// 
+			// txtAlturaPiramide
+			// 
+			this.txtAlturaPiramide.Location = new System.Drawing.Point(175, 154);
+			this.txtAlturaPiramide.Name = "txtAlturaPiramide";
+			this.txtAlturaPiramide.Size = new System.Drawing.Size(100, 20);
+			this.txtAlturaPiramide.TabIndex = 12;
+			this.txtAlturaPiramide.Visible = false;
+			// 
+			// txtAreaPiramide
+			// 
+			this.txtAreaPiramide.Location = new System.Drawing.Point(175, 101);
+			this.txtAreaPiramide.Name = "txtAreaPiramide";
+			this.txtAreaPiramide.Size = new System.Drawing.Size(100, 20);
+			this.txtAreaPiramide.TabIndex = 11;
+			this.txtAreaPiramide.Visible = false;
+			// 
+			// txtCubo
+			// 
+			this.txtCubo.Location = new System.Drawing.Point(175, 22);
+			this.txtCubo.Name = "txtCubo";
+			this.txtCubo.Size = new System.Drawing.Size(100, 20);
+			this.txtCubo.TabIndex = 10;
+			this.txtCubo.Visible = false;
+			// 
+			// lblPiramide
+			// 
+			this.lblPiramide.Location = new System.Drawing.Point(175, 61);
+			this.lblPiramide.Name = "lblPiramide";
+			this.lblPiramide.Size = new System.Drawing.Size(100, 16);
+			this.lblPiramide.TabIndex = 9;
+			this.lblPiramide.Text = "Piramide";
+			this.lblPiramide.Visible = false;
+			// 
+			// lblCubo
+			// 
+			this.lblCubo.Location = new System.Drawing.Point(195, 2);
+			this.lblCubo.Name = "lblCubo";
+			this.lblCubo.Size = new System.Drawing.Size(36, 17);
+			this.lblCubo.TabIndex = 8;
+			this.lblCubo.Text = "Cubo";
+			this.lblCubo.Visible = false;
+			// 
+			// lblEsfera
+			// 
+			this.lblEsfera.Location = new System.Drawing.Point(27, 2);
+			this.lblEsfera.Name = "lblEsfera";
+			this.lblEsfera.Size = new System.Drawing.Size(100, 23);
+			this.lblEsfera.TabIndex = 7;
+			this.lblEsfera.Text = "Esfera";
+			this.lblEsfera.Visible = false;
+			// 
+			// txtResultadoVolumen
+			// 
+			this.txtResultadoVolumen.Location = new System.Drawing.Point(27, 164);
+			this.txtResultadoVolumen.Name = "txtResultadoVolumen";
+			this.txtResultadoVolumen.Size = new System.Drawing.Size(108, 20);
+			this.txtResultadoVolumen.TabIndex = 6;
+			// 
+			// lblResult
+			// 
+			this.lblResult.Location = new System.Drawing.Point(27, 131);
+			this.lblResult.Name = "lblResult";
+			this.lblResult.Size = new System.Drawing.Size(100, 23);
+			this.lblResult.TabIndex = 5;
+			this.lblResult.Text = "Resultado";
+			// 
+			// txtEsfera
+			// 
+			this.txtEsfera.Location = new System.Drawing.Point(27, 30);
+			this.txtEsfera.Name = "txtEsfera";
+			this.txtEsfera.Size = new System.Drawing.Size(100, 20);
+			this.txtEsfera.TabIndex = 4;
+			this.txtEsfera.Visible = false;
+			// 
+			// btnCalcularVolumen
+			// 
+			this.btnCalcularVolumen.Location = new System.Drawing.Point(27, 105);
+			this.btnCalcularVolumen.Name = "btnCalcularVolumen";
+			this.btnCalcularVolumen.Size = new System.Drawing.Size(75, 23);
+			this.btnCalcularVolumen.TabIndex = 3;
+			this.btnCalcularVolumen.Text = "Calcular";
+			this.btnCalcularVolumen.UseVisualStyleBackColor = true;
+			this.btnCalcularVolumen.Click += new System.EventHandler(this.BtnCalcularVolumenClick);
+			// 
+			// ptbEsfera
+			// 
+			this.ptbEsfera.Image = ((System.Drawing.Image)(resources.GetObject("ptbEsfera.Image")));
+			this.ptbEsfera.Location = new System.Drawing.Point(310, 112);
+			this.ptbEsfera.Name = "ptbEsfera";
+			this.ptbEsfera.Size = new System.Drawing.Size(66, 50);
+			this.ptbEsfera.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.ptbEsfera.TabIndex = 2;
+			this.ptbEsfera.TabStop = false;
+			this.ptbEsfera.Visible = false;
+			// 
+			// ptbCubo
+			// 
+			this.ptbCubo.Image = ((System.Drawing.Image)(resources.GetObject("ptbCubo.Image")));
+			this.ptbCubo.Location = new System.Drawing.Point(310, 59);
+			this.ptbCubo.Name = "ptbCubo";
+			this.ptbCubo.Size = new System.Drawing.Size(66, 50);
+			this.ptbCubo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.ptbCubo.TabIndex = 1;
+			this.ptbCubo.TabStop = false;
+			this.ptbCubo.Visible = false;
+			// 
+			// ptbPiramide
+			// 
+			this.ptbPiramide.Image = ((System.Drawing.Image)(resources.GetObject("ptbPiramide.Image")));
+			this.ptbPiramide.Location = new System.Drawing.Point(310, 3);
+			this.ptbPiramide.Name = "ptbPiramide";
+			this.ptbPiramide.Size = new System.Drawing.Size(66, 50);
+			this.ptbPiramide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.ptbPiramide.TabIndex = 0;
+			this.ptbPiramide.TabStop = false;
+			this.ptbPiramide.Visible = false;
 			// 
 			// pnAplicacion
 			// 
@@ -404,6 +575,7 @@ namespace proyecto
 			this.btnConvertir.TabIndex = 0;
 			this.btnConvertir.Text = "Convertir";
 			this.btnConvertir.UseVisualStyleBackColor = true;
+			this.btnConvertir.Click += new System.EventHandler(this.BtnConvertirClick);
 			// 
 			// menuStrip1
 			// 
@@ -416,11 +588,11 @@ namespace proyecto
 									this.apicacionesToolStripMenuItem,
 									this.areaToolStripMenuItem,
 									this.perimetroToolStripMenuItem,
-									this.volumenToolStripMenuItem});
+									this.PiramideToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
 			this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-			this.menuStrip1.Size = new System.Drawing.Size(917, 24);
+			this.menuStrip1.Size = new System.Drawing.Size(1030, 24);
 			this.menuStrip1.TabIndex = 17;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
@@ -584,34 +756,43 @@ namespace proyecto
 			this.trapecioToolStripMenuItem.Text = "Trapecio";
 			this.trapecioToolStripMenuItem.Click += new System.EventHandler(this.TrapecioToolStripMenuItemClick);
 			// 
-			// volumenToolStripMenuItem
+			// PiramideToolStripMenuItem
 			// 
-			this.volumenToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+			this.PiramideToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
 									this.esferaToolStripMenuItem,
-									this.cuboToolStripMenuItem});
-			this.volumenToolStripMenuItem.Name = "volumenToolStripMenuItem";
-			this.volumenToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-			this.volumenToolStripMenuItem.Text = "Volumen";
-			this.volumenToolStripMenuItem.Click += new System.EventHandler(this.VolumenToolStripMenuItemClick);
+									this.cuboToolStripMenuItem,
+									this.piramideToolStripMenuItem1});
+			this.PiramideToolStripMenuItem.Name = "PiramideToolStripMenuItem";
+			this.PiramideToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+			this.PiramideToolStripMenuItem.Text = "Volumen";
+			this.PiramideToolStripMenuItem.Click += new System.EventHandler(this.VolumenToolStripMenuItemClick);
 			// 
 			// esferaToolStripMenuItem
 			// 
 			this.esferaToolStripMenuItem.Name = "esferaToolStripMenuItem";
-			this.esferaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.esferaToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
 			this.esferaToolStripMenuItem.Text = "Esfera";
-
+			this.esferaToolStripMenuItem.Click += new System.EventHandler(this.EsferaToolStripMenuItemClick);
 			// 
 			// cuboToolStripMenuItem
 			// 
 			this.cuboToolStripMenuItem.Name = "cuboToolStripMenuItem";
-			this.cuboToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.cuboToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
 			this.cuboToolStripMenuItem.Text = "Cubo";
+			this.cuboToolStripMenuItem.Click += new System.EventHandler(this.CuboToolStripMenuItemClick);
+			// 
+			// piramideToolStripMenuItem1
+			// 
+			this.piramideToolStripMenuItem1.Name = "piramideToolStripMenuItem1";
+			this.piramideToolStripMenuItem1.Size = new System.Drawing.Size(121, 22);
+			this.piramideToolStripMenuItem1.Text = "Piramide";
+			this.piramideToolStripMenuItem1.Click += new System.EventHandler(this.PiramideToolStripMenuItem1Click);
 			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(917, 299);
+			this.ClientSize = new System.Drawing.Size(1030, 299);
 			this.Controls.Add(this.pnVolumen);
 			this.Controls.Add(this.pnAplicacion);
 			this.Controls.Add(this.pnPerimetro);
@@ -620,6 +801,11 @@ namespace proyecto
 			this.Controls.Add(this.menuStrip1);
 			this.Name = "Form1";
 			this.Text = "Form1";
+			this.pnVolumen.ResumeLayout(false);
+			this.pnVolumen.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.ptbEsfera)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.ptbCubo)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.ptbPiramide)).EndInit();
 			this.pnAplicacion.ResumeLayout(false);
 			this.pnAplicacion.PerformLayout();
 			this.pnPerimetro.ResumeLayout(false);
@@ -634,9 +820,25 @@ namespace proyecto
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Label lblAreaBase;
+		private System.Windows.Forms.Label lblAlturaPiramide;
+		private System.Windows.Forms.TextBox txtAlturaPiramide;
+		private System.Windows.Forms.Label lblEsfera;
+		private System.Windows.Forms.Label lblCubo;
+		private System.Windows.Forms.Label lblPiramide;
+		private System.Windows.Forms.TextBox txtCubo;
+		private System.Windows.Forms.TextBox txtAreaPiramide;
+		private System.Windows.Forms.TextBox txtEsfera;
+		private System.Windows.Forms.Label lblResult;
+		private System.Windows.Forms.TextBox txtResultadoVolumen;
+		private System.Windows.Forms.PictureBox ptbPiramide;
+		private System.Windows.Forms.PictureBox ptbCubo;
+		private System.Windows.Forms.PictureBox ptbEsfera;
+		private System.Windows.Forms.Button btnCalcularVolumen;
+		private System.Windows.Forms.ToolStripMenuItem piramideToolStripMenuItem1;
 		private System.Windows.Forms.ToolStripMenuItem cuboToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem esferaToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem volumenToolStripMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem PiramideToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem trapecioToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem circunferenciaToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem perimetroToolStripMenuItem;
