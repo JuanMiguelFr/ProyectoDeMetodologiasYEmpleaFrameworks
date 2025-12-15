@@ -316,5 +316,75 @@ namespace proyecto
                 z=x;}
 			}
 		}
+		void EsferaToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			banderaVolumen = 1;
+			lblEsfera.Visible=true;
+			txtEsfera.Visible=true;
+			ptbEsfera.Visible=true;
+			lblCubo.Visible=false;
+			txtCubo.Visible=false;
+			ptbCubo.Visible=false;
+			lblPiramide.Visible=false;
+			lblAlturaPiramide.Visible=false;
+			lblAreaBase.Visible=false;
+			txtAlturaPiramide.Visible=false;
+			txtAreaPiramide.Visible=false;
+			ptbPiramide.Visible=false;
+			txtResultadoVolumen.Clear();
+		}
+		
+		void CuboToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			banderaVolumen = 2;
+			lblCubo.Visible=true;
+			txtCubo.Visible=true;
+			ptbCubo.Visible=true;
+			lblEsfera.Visible=false;
+			txtEsfera.Visible=false;
+			ptbEsfera.Visible=false;
+			lblPiramide.Visible=false;
+			lblAlturaPiramide.Visible=false;
+			lblAreaBase.Visible=false;
+			txtAlturaPiramide.Visible=false;
+			txtAreaPiramide.Visible=false;
+			ptbPiramide.Visible=false;
+			txtResultadoVolumen.Clear();
+		}
+		
+		void PiramideToolStripMenuItem1Click(object sender, EventArgs e)
+		{
+			banderaVolumen = 3;
+			lblPiramide.Visible=true;
+			lblAlturaPiramide.Visible=true;
+			lblAreaBase.Visible=true;
+			txtAlturaPiramide.Visible=true;
+			txtAreaPiramide.Visible=true;
+			ptbPiramide.Visible=true;
+			lblEsfera.Visible=false;
+			txtEsfera.Visible=false;
+			ptbEsfera.Visible=false;
+			lblCubo.Visible=false;
+			txtCubo.Visible=false;
+			ptbCubo.Visible=false;
+			txtResultadoVolumen.Clear();
+		}
+		void BtnCalcularVolumenClick(object sender, EventArgs e)
+		{
+			if(banderaVolumen==1){
+				double Pi=3.1416;
+				double v= Double.Parse(txtEsfera.Text);
+				this.txtResultadoVolumen.Text=this.txtResultadoVolumen.Text+ (Pi * v * v * v)+" ";
+			}
+			if(banderaVolumen==2){
+				double v= Double.Parse(txtCubo.Text);
+				this.txtResultadoVolumen.Text=this.txtResultadoVolumen.Text+ (v * v * v)+" ";
+			}	
+			if(banderaVolumen==3){
+				double Al=Double.Parse(txtAlturaPiramide.Text);
+				double a= Double.Parse(txtAreaPiramide.Text);
+				this.txtResultadoVolumen.Text=this.txtResultadoVolumen.Text+ (Al * a /3)+" ";
+			}			
+		}
 	}
 }
