@@ -20,6 +20,7 @@ namespace proyecto
 		Form2 f2 = new Form2();
 		Form3 f3 = new Form3();
 		Form4 f4 = new Form4();
+		Form5 f5 = new Form5();
 		int banderaPerimetro = 0;
 		int banderaConverciones = 0;
 		int banderaArea = 0;
@@ -385,6 +386,21 @@ namespace proyecto
 				double a= Double.Parse(txtAreaPiramide.Text);
 				this.txtResultadoVolumen.Text=this.txtResultadoVolumen.Text+ (Al * a /3)+" ";
 			}			
+		}
+		
+		void AcercaDeToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			f5.MdiParent = this;
+         	f5.Show();
+         	this.f5.Visible=true;
+         	this.pnConverciones.Visible=false;
+		    this.pnArea.Visible=false;
+		    this.pnPerimetro.Visible=false;
+		    this.pnAplicacion.Visible=false;
+		    this.pnVolumen.Visible=false;
+		    this.f4.Visible=false;
+		    this.f3.Visible=false;
+		    this.f2.Visible=false;
 		}
 	}
 }

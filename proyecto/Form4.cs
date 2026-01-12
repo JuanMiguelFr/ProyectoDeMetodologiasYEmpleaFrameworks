@@ -73,6 +73,7 @@ namespace proyecto
 				
 			n+=d;
 			this.lblPromedio.Text=(n/glo).ToString();
+			lblFecha.Text = DateTime.Now.ToString("dd/MM/yyyy");
 			
 		}
 		
@@ -86,5 +87,6 @@ namespace proyecto
 			cbbMateria.Text = "Establece una Asignatura";
 			txtNombre.Clear();
 		}
+		
 	}
 }
