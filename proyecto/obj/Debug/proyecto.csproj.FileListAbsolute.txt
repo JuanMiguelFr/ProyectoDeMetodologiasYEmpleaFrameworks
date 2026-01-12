@@ -18,3 +18,4 @@ C:\Users\asus\repo\ProyectoDeMetodologiasYEmpleaFrameworks\proyecto\bin\Debug\pr
 C:\Users\asus\repo\ProyectoDeMetodologiasYEmpleaFrameworks\proyecto\bin\Debug\proyecto.pdb
 C:\Users\asus\repo\ProyectoDeMetodologiasYEmpleaFrameworks\proyecto\obj\Debug\proyecto.exe
 C:\Users\asus\repo\ProyectoDeMetodologiasYEmpleaFrameworks\proyecto\obj\Debug\proyecto.pdb
+C:\Users\Gabriel\CLON\ProyectoDeMetodologiasYEmpleaFrameworks\proyecto\obj\Debug\proyecto.Form5.resources

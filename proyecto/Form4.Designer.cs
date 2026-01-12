@@ -46,6 +46,7 @@ namespace proyecto
 			this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
 			this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
 			this.gbGrado = new System.Windows.Forms.GroupBox();
+			this.lbl10 = new System.Windows.Forms.Label();
 			this.btnSalir = new System.Windows.Forms.Button();
 			this.btnCancelar = new System.Windows.Forms.Button();
 			this.btnRegistrar = new System.Windows.Forms.Button();
@@ -134,6 +135,7 @@ namespace proyecto
 			// 
 			// gbGrado
 			// 
+			this.gbGrado.Controls.Add(this.lbl10);
 			this.gbGrado.Controls.Add(this.btnSalir);
 			this.gbGrado.Controls.Add(this.btnCancelar);
 			this.gbGrado.Controls.Add(this.btnRegistrar);
@@ -162,6 +164,13 @@ namespace proyecto
 			this.gbGrado.TabIndex = 16;
 			this.gbGrado.TabStop = false;
 			this.gbGrado.Text = "Boleta de calificaciones";
+			// 
+			// lbl10
+			// 
+			this.lbl10.Location = new System.Drawing.Point(329, 144);
+			this.lbl10.Name = "lbl10";
+			this.lbl10.Size = new System.Drawing.Size(101, 23);
+			this.lbl10.TabIndex = 21;
 			// 
 			// btnSalir
 			// 
@@ -374,6 +383,7 @@ namespace proyecto
 			this.gbGrado.PerformLayout();
 			this.ResumeLayout(false);
 		}
+		private System.Windows.Forms.Label lbl10;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.TextBox txtNombre;
 		private System.Windows.Forms.Label label2;

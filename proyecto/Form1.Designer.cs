@@ -109,6 +109,7 @@ namespace proyecto
 			this.esferaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.cuboToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.piramideToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+			this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.pnVolumen.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.ptbEsfera)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.ptbCubo)).BeginInit();
@@ -588,7 +589,8 @@ namespace proyecto
 									this.apicacionesToolStripMenuItem,
 									this.areaToolStripMenuItem,
 									this.perimetroToolStripMenuItem,
-									this.PiramideToolStripMenuItem});
+									this.PiramideToolStripMenuItem,
+									this.acercaDeToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
 			this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
@@ -788,6 +790,13 @@ namespace proyecto
 			this.piramideToolStripMenuItem1.Text = "Piramide";
 			this.piramideToolStripMenuItem1.Click += new System.EventHandler(this.PiramideToolStripMenuItem1Click);
 			// 
+			// acercaDeToolStripMenuItem
+			// 
+			this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
+			this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
+			this.acercaDeToolStripMenuItem.Text = "Acerca de...";
+			this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.AcercaDeToolStripMenuItemClick);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -820,6 +829,7 @@ namespace proyecto
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
 		private System.Windows.Forms.Label lblAreaBase;
 		private System.Windows.Forms.Label lblAlturaPiramide;
 		private System.Windows.Forms.TextBox txtAlturaPiramide;
